@@ -1,6 +1,15 @@
-# Bulk Email Sender
+<!-- Banner image placeholder -->
+<img src="https://res.cloudinary.com/dmtvg2mj4/image/upload/v1756985046/Copy_of_Stream_u7qkp0.png"/>
 
+<h1 align="center">Bulk Email Sender</h1>
 A simple Python tool for sending personalized bulk emails using a CSV contact list and a template. Supports Gmail and other SMTP services with customizable fields.
+
+## Built Using
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,python,html,css" />
+  </a>
+</p>
 
 ## Features
 - Send personalized emails to a list of recipients from a CSV file.
@@ -16,8 +25,8 @@ A simple Python tool for sending personalized bulk emails using a CSV contact li
 ## Installation
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/bulkEmailSenderRepo.git
-   cd bulkEmailSenderRepo
+   git clone https://github.com/Sohan-Rout/BulkEmailGenrator.git
+   cd BulkEmailGenrator
    ```
 2. **Install dependencies:**
    ```sh
@@ -38,9 +47,9 @@ You can run the script in interactive menu mode or specify a mode via command li
 python3 main.py
 ```
 
-**Direct mode (e.g., send):**
+**Direct mode (e.g., Emails):**
 ```sh
-python3 main.py --mode send
+python3 main.py --mode Emails
 ```
 
 ## CSV and Template Format Examples
@@ -53,9 +62,36 @@ neshka@example.com,Neshka
 
 ### Email Template Example
 ```html
-Hello {name},
-
-Welcome to {company}. We're glad to have you on board!
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #222;
+      }
+      .container {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        margin: 40px auto;
+        max-width: 480px;
+        padding: 32px;
+      }
+      h2 {
+        color: #2a7ae2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Hello $name,</h2>
+      <p>
+        Welcome, We're glad to have you on board!
+      </p>
+    </div>
+  </body>
+</html>
 ```
 
 ## Troubleshooting
